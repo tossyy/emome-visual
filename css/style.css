@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/* サイト全体 
+-------------------- */
+html {
+  font-size: 100%; }
+
+body {
+  font-size: 1rem;
+  color: #333; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+img {
+  max-width: 100%; }
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  top: 0px;
+  left: 0px;
+  height: 80px;
+  width: 100%;
+  padding: 0 2%;
+  z-index: 999; }
+  .header .header-block {
+    display: flex;
+    align-items: center; }
+    .header .header-block .open-btn {
+      position: relative;
+      z-index: 9999;
+      cursor: pointer;
+      width: 50px;
+      height: 50px; }
+      .header .header-block .open-btn span {
+        display: inline-block;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #ab27f3;
+        width: 45%; }
+        .header .header-block .open-btn span:nth-of-type(1) {
+          top: 15px; }
+        .header .header-block .open-btn span:nth-of-type(2) {
+          top: 23px; }
+        .header .header-block .open-btn span:nth-of-type(3) {
+          top: 31px; }
+    .header .header-block .logo {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px; }
+      .header .header-block .logo img {
+        height: 2.25rem; }
+    .header .header-block .search-wrap #search-text {
+      height: 2.25rem;
+      border: none;
+      border-radius: 30px;
+      background: #ccc url("../img/icon_search.png") no-repeat 17px center;
+      background-size: 25px 25px;
+      outline: none;
+      width: 500px;
+      padding: 20px 0 20px 60px; }
+    .header .header-block .help, .header .header-block .setting, .header .header-block .account {
+      margin-left: 20px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .header .header-block .help img, .header .header-block .setting img, .header .header-block .account img {
+        height: 2.25rem; }
+
+.outer {
+  display: flex; }
+  .outer .g-nav {
+    position: fixed;
+    top: 80px;
+    left: 0px;
+    width: 230px;
+    height: 100vh;
+    background-color: #eee;
+    transition: all .4s; }
+    .outer .g-nav .g-nav-list {
+      position: absolute; }
+      .outer .g-nav .g-nav-list li {
+        padding: 20px 0; }
+        .outer .g-nav .g-nav-list li a {
+          display: flex;
+          align-items: center; }
+          .outer .g-nav .g-nav-list li a img {
+            width: 30%;
+            height: 2.25rem;
+            object-fit: contain; }
+          .outer .g-nav .g-nav-list li a p {
+            width: 70%;
+            color: #333; }
+    .outer .g-nav.panelinactive {
+      left: -230px; }
+  .outer .home-content {
+    padding-top: 80px;
+    padding-left: 230px;
+    width: 100%;
+    transition: all .4s; }
+    .outer .home-content .wrapper {
+      margin: 20px 40px 0 40px; }
+      .outer .home-content .wrapper .page-title {
+        border-bottom: solid 1px #ccc;
+        margin-bottom: 20px; }
+      .outer .home-content .wrapper .your-recommend {
+        margin-bottom: 20px;
+        padding: 20px;
+        background-color: #eee; }
+        .outer .home-content .wrapper .your-recommend .section-title {
+          margin-bottom: 10px; }
+        .outer .home-content .wrapper .your-recommend .movie-list {
+          display: flex;
+          justify-content: space-between; }
+          .outer .home-content .wrapper .your-recommend .movie-list li {
+            width: 30%; }
+            .outer .home-content .wrapper .your-recommend .movie-list li .movie {
+              color: #333; }
+              .outer .home-content .wrapper .your-recommend .movie-list li .movie .speaker-profile {
+                font-size: 0.875rem; }
+              .outer .home-content .wrapper .your-recommend .movie-list li .movie .movie-title {
+                font-weight: bold; }
+              .outer .home-content .wrapper .your-recommend .movie-list li .movie img {
+                width: 100%;
+                box-shadow: 5px 5px 5px gray; }
+      .outer .home-content .wrapper .ranking {
+        margin-bottom: 20px;
+        padding: 20px; }
+        .outer .home-content .wrapper .ranking .section-title {
+          margin-bottom: 10px; }
+        .outer .home-content .wrapper .ranking .section-wrapper {
+          display: flex;
+          justify-content: space-between; }
+          .outer .home-content .wrapper .ranking .section-wrapper .big-movie {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            color: #333; }
+            .outer .home-content .wrapper .ranking .section-wrapper .big-movie img {
+              width: 50%;
+              object-fit: contain; }
+            .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text {
+              width: 48%;
+              text-align: center;
+              margin-top: 30px; }
+              .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .movie-title {
+                font-size: 1.25rem;
+                font-weight: bold; }
+              .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .movie-subtitle, .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .movie-title-en {
+                font-size: 0.85rem; }
+              .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .speaker-profile {
+                margin: 10px 0 40px 0; }
+              .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .review-list {
+                background-color: #eee;
+                padding: 10px;
+                border-radius: 20px; }
+                .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .review-list .review-title {
+                  text-align: left;
+                  font-size: 0.85rem;
+                  font-weight: bold;
+                  margin-bottom: 10px; }
+                .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .review-list .review {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  background-color: #fff;
+                  border-radius: 20px;
+                  padding: 10px; }
+                  .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .review-list .review img {
+                    height: 2rem;
+                    width: 20%; }
+                  .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .review-list .review p {
+                    font-size: 0.85rem;
+                    text-align: left;
+                    border-left: solid 1px #ccc;
+                    padding: 0 10px; }
+          .outer .home-content .wrapper .ranking .section-wrapper .ranking-list {
+            width: 15%; }
+            .outer .home-content .wrapper .ranking .section-wrapper .ranking-list li {
+              margin-bottom: 10px; }
+              .outer .home-content .wrapper .ranking .section-wrapper .ranking-list li a {
+                display: flex;
+                justify-content: space-between;
+                color: #333; }
+                .outer .home-content .wrapper .ranking .section-wrapper .ranking-list li a .ranking-no {
+                  width: 10%;
+                  font-size: 1.25rem; }
+                .outer .home-content .wrapper .ranking .section-wrapper .ranking-list li a img {
+                  width: 85%; }
+                  .outer .home-content .wrapper .ranking .section-wrapper .ranking-list li a img.active {
+                    border: solid 3px #ab27f3; }
+                .outer .home-content .wrapper .ranking .section-wrapper .ranking-list li a.read-more {
+                  display: block;
+                  margin: 0 auto;
+                  text-align: center;
+                  width: 85%;
+                  border-radius: 10px;
+                  background-color: #eee; }
+    .outer .home-content.fullwindow {
+      padding-left: 0px; }
+
+/*# sourceMappingURL=style.css.map */

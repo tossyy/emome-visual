@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>HOME | emome</title>
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="header-block">
+                <div class="open-btn"><span></span><span></span><span></span></div>
+                <a href="home.html" class="logo"><img src="img/emome.png"></a>
+            </div>
+
+            <div class="header-block">
+                <div class="search-wrap">
+                    <form role="search" method="get" action="">
+                        <input type="text" value="" name="" id="search-text">
+                    </form>
+                </div>
+            </div>
+
+            <div class="header-block">
+                <a href="#" class="help"><img src="img/question.png"></a>
+                <a href="#" class="setting"><img src="img/setting.png"></a>
+                <a href="#" class="account"><img src="img/person.png"></a>
+            </div>
+        </header>
+
+        <main class="outer">
+            <aside class="g-nav">
+                <nav>
+                    <ul class="g-nav-list">
+                        <li><a href="#"><img src="img/home.png"><p>ホーム</p></a></li>
+                        <li><a href="#"><img src="img/icon_search.png"><p>探す</p></a></li>
+                        <li><a href="#"><img src="img/checkbox.png"><p>あなたへのおすすめ</p></a></li>
+                        <li><a href="#"><img src="img/crown.png"><p>今週のランキング</p></a></li>
+                        <li><a href="#"><img src="img/library.svg"><p>ライブラリー</p></a></li>
+                        <li><a href="#"><img src="img/start.png"><p>視聴中の動画</p></a></li>
+                        <li><a href="#"><img src="img/heart.png"><p>ウィッシュリスト</p></a></li>
+                        <li><a href="#"><img src="img/clock.png"><p>過去に見た動画</p></a></li>
+                        <li><a href="#"><img src="img/note.png"><p>サマリーノート</p></a></li>
+                    </ul>
+                </nav>
+            </aside>
+            <div class="home-content">
+                <div class="wrapper">
+                    <h1 class="page-title">ホーム</h1>
+                    <section class="your-recommend">
+                        <h2 class="section-title">あなたへのおすすめ</h2>
+                        <ul class="movie-list">
+                            <li>
+                                <a href="#" class="movie">
+                                    <p class="speaker-profile">山田辰夫 Mgames CEO</p>
+                                    <p class="movie-title">幸せになるために決めたこと</p>
+                                    <img src="img/moriyama.jpeg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="movie">
+                                    <p class="speaker-profile">山田辰夫 Mgames CEO</p>
+                                    <p class="movie-title">幸せになるために決めたこと</p>
+                                    <img src="img/moriyama.jpeg">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="movie">
+                                    <p class="speaker-profile">山田辰夫 Mgames CEO</p>
+                                    <p class="movie-title">幸せになるために決めたこと</p>
+                                    <img src="img/moriyama.jpeg">
+                                </a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="ranking">
+                        <h2 class="section-title">今週のランキング</h2>
+                        <div class="section-wrapper">
+                            <a href="#" class="big-movie">
+                                <img src="img/moriyama.jpeg">
+                                <div class="text">
+                                    <p class="movie-title">こんな僕でもCEOになれると思った日のこと</p>
+                                    <p class="movie-subtitle">ーちょっと優秀な大学生だったあの日のつづきー</p>
+                                    <p class="movie-title-en">About the day I realized I could be CEO</p>
+                                    <p class="speaker-profile">Mack Daniel / 邦訳：高橋 邦子</p>
+                                    <div class="review-list">
+                                        <p class="review-title">世界のレビュー</p>
+                                        <div class="review">
+                                            <img src="img/japan-flag.png">
+                                            <p>起業をビビる意味が分からなくなった。俺にもできそう。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <ul class="ranking-list">
+                                <li>
+                                    <a href="#">
+                                        <div class="ranking-no">①</div>
+                                        <img class="active" src="img/moriyama.jpeg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="ranking-no">②</div>
+                                        <img src="img/moriyama.jpeg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="ranking-no">③</div>
+                                        <img src="img/moriyama.jpeg">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="read-more">
+                                        すべて見る
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <script src="js/my-script.js"></script>
+    </body>
+</html>
