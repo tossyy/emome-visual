@@ -79,11 +79,11 @@ img {
                 height: 2.25rem;
                 border: none;
                 border-radius: 30px;
-                background: #ccc url("../img/icon_search.png") no-repeat 17px center;
-                background-size: 25px 25px;
+                background: #ccc url("../img/icon_search.png") no-repeat 10px center;
+                background-size: 2rem;
                 outline: none;
                 width: 500px;
-                padding: 20px 0 20px 60px;
+                padding: 20px 20px 20px 50px;
             }
         }
 
@@ -127,6 +127,9 @@ img {
                         width: 70%;
                         color: #333;
                     }
+                }
+                &.active {
+                    background-color: #ccc;
                 }
             }
         }
@@ -198,62 +201,75 @@ img {
                     display: flex;
                     justify-content: space-between;
 
-                    .big-movie {
+                    .big-movie-container {
                         width: 80%;
-                        display: flex;
-                        justify-content: space-between;
-                        color: #333;
-    
-                        img {
-                            width: 50%;
-                            object-fit: contain;
-                        }
-    
-                        .text {
-                            width: 48%;
-                            text-align: center;
-                            margin-top: 30px;
-                            .movie-title {
-                                font-size: 1.25rem;
-                                font-weight: bold;
-                            }
-                            .movie-subtitle, .movie-title-en {
-                                font-size: 0.85rem;
-                            }
-                            .speaker-profile {
-                                margin: 10px 0 40px 0;
+                        position: relative;
+
+                        .big-movie {
+                            position: absolute;
+                            display: none;
+                            justify-content: space-between;
+                            color: #333;
+
+                            &.active {
+                                display: flex;
                             }
 
-                            .review-list {
-                                background-color: #eee;
-                                padding: 10px;
-                                border-radius: 20px;
-                                .review-title {
-                                    text-align: left;
-                                    font-size: 0.85rem;
-                                    font-weight: bold;
-                                    margin-bottom: 10px;
+                            a {
+                                width: 50%;
+                                img {
+                                    object-fit: contain;
                                 }
-                                .review {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    background-color: #fff;
-                                    border-radius: 20px;
+                            }
+        
+                            .text {
+                                width: 48%;
+                                text-align: center;
+                                margin-top: 30px;
+                                .movie-title {
+                                    font-size: 1.25rem;
+                                    font-weight: bold;
+                                }
+                                .movie-subtitle, .movie-title-en {
+                                    font-size: 0.85rem;
+                                }
+                                .speaker-profile {
+                                    margin: 10px 0 40px 0;
+                                }
+    
+                                .review-list {
+                                    background-color: #eee;
                                     padding: 10px;
-                                    img {
-                                        height: 2rem;
-                                        width: 20%;
-                                    }
-                                    p {
-                                        font-size: 0.85rem;
+                                    border-radius: 20px;
+                                    .review-title {
                                         text-align: left;
-                                        border-left: solid 1px #ccc;
-                                        padding: 0 10px;
+                                        font-size: 0.85rem;
+                                        font-weight: bold;
+                                        margin-bottom: 10px;
+                                    }
+                                    .review {
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        background-color: #fff;
+                                        border-radius: 20px;
+                                        padding: 10px;
+                                        img {
+                                            height: 2rem;
+                                            width: 20%;
+                                            object-fit: contain;
+                                        }
+                                        p {
+                                            font-size: 0.85rem;
+                                            text-align: left;
+                                            border-left: solid 1px #ccc;
+                                            padding: 0 10px;
+                                        }
                                     }
                                 }
                             }
                         }
+
                     }
 
                     .ranking-list {
@@ -272,9 +288,6 @@ img {
                                 }
                                 img {
                                     width: 85%;
-                                    &.active {
-                                        border: solid 3px rgb(171, 39, 243);
-                                    }
                                 }
 
                                 &.read-more {
@@ -284,6 +297,11 @@ img {
                                     width: 85%;
                                     border-radius: 10px;
                                     background-color: #eee;
+                                }
+                            }
+                            &.active {
+                                img {
+                                    border: solid 3px rgb(171, 39, 243);
                                 }
                             }
                         }

@@ -32,7 +32,7 @@
             <aside class="g-nav">
                 <nav>
                     <ul class="g-nav-list">
-                        <li><a href="#"><img src="img/home.png"><p>ホーム</p></a></li>
+                        <li class="active"><a href="#"><img src="img/home.png"><p>ホーム</p></a></li>
                         <li><a href="#"><img src="img/icon_search.png"><p>探す</p></a></li>
                         <li><a href="#"><img src="img/checkbox.png"><p>あなたへのおすすめ</p></a></li>
                         <li><a href="#"><img src="img/crown.png"><p>今週のランキング</p></a></li>
@@ -76,37 +76,71 @@
                     <section class="ranking">
                         <h2 class="section-title">今週のランキング</h2>
                         <div class="section-wrapper">
-                            <a href="#" class="big-movie">
-                                <img src="img/moriyama.jpeg">
-                                <div class="text">
-                                    <p class="movie-title">こんな僕でもCEOになれると思った日のこと</p>
-                                    <p class="movie-subtitle">ーちょっと優秀な大学生だったあの日のつづきー</p>
-                                    <p class="movie-title-en">About the day I realized I could be CEO</p>
-                                    <p class="speaker-profile">Mack Daniel / 邦訳：高橋 邦子</p>
-                                    <div class="review-list">
-                                        <p class="review-title">世界のレビュー</p>
-                                        <div class="review">
-                                            <img src="img/japan-flag.png">
-                                            <p>起業をビビる意味が分からなくなった。俺にもできそう。</p>
+                            <div class="big-movie-container">
+                                <div id="ranking-no1" class="big-movie">
+                                    <a href="#"><img src="img/moriyama.jpeg"></a>
+                                    <div class="text">
+                                        <p class="movie-title">こんな僕でもCEOになれると思った日のこと</p>
+                                        <p class="movie-subtitle">ーちょっと優秀な大学生だったあの日のつづきー</p>
+                                        <p class="movie-title-en">About the day I realized I could be CEO</p>
+                                        <p class="speaker-profile">Mack Daniel / 邦訳：高橋 邦子</p>
+                                        <div class="review-list">
+                                            <p class="review-title">世界のレビュー</p>
+                                            <div class="review">
+                                                <img src="img/japan-flag.png">
+                                                <p>起業をビビる意味が分からなくなった。俺にもできそう。</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </a>
+                                <div id="ranking-no2" class="big-movie">
+                                    <a href="#"><img src="img/moriyama.jpeg"></a>
+                                    <div class="text">
+                                        <p class="movie-title">幸せになるために決めたこと</p>
+                                        <p class="movie-subtitle">ーちょっと優秀な大学生だったあの日のつづきー</p>
+                                        <p class="movie-title-en">About the day I realized I could be CEO</p>
+                                        <p class="speaker-profile">Mack Daniel / 邦訳：高橋 邦子</p>
+                                        <div class="review-list">
+                                            <p class="review-title">世界のレビュー</p>
+                                            <div class="review">
+                                                <img src="img/japan-flag.png">
+                                                <p>起業をビビる意味が分からなくなった。俺にもできそう。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ranking-no3" class="big-movie">
+                                    <a href="#"><img src="img/moriyama.jpeg"></a>
+                                    <div class="text">
+                                        <p class="movie-title">今思うこと</p>
+                                        <p class="movie-subtitle">ーちょっと優秀な大学生だったあの日のつづきー</p>
+                                        <p class="movie-title-en">About the day I realized I could be CEO</p>
+                                        <p class="speaker-profile">Mack Daniel / 邦訳：高橋 邦子</p>
+                                        <div class="review-list">
+                                            <p class="review-title">世界のレビュー</p>
+                                            <div class="review">
+                                                <img src="img/japan-flag.png">
+                                                <p>起業をビビる意味が分からなくなった。俺にもできそう。</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <ul class="ranking-list">
                                 <li>
-                                    <a href="#">
+                                    <a href="#ranking-no1">
                                         <div class="ranking-no">①</div>
-                                        <img class="active" src="img/moriyama.jpeg">
+                                        <img src="img/moriyama.jpeg">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#ranking-no2">
                                         <div class="ranking-no">②</div>
                                         <img src="img/moriyama.jpeg">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
+                                    <a href="#ranking-no3">
                                         <div class="ranking-no">③</div>
                                         <img src="img/moriyama.jpeg">
                                     </a>

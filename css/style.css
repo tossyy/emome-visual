@@ -64,11 +64,11 @@ img {
       height: 2.25rem;
       border: none;
       border-radius: 30px;
-      background: #ccc url("../img/icon_search.png") no-repeat 17px center;
-      background-size: 25px 25px;
+      background: #ccc url("../img/icon_search.png") no-repeat 10px center;
+      background-size: 2rem;
       outline: none;
       width: 500px;
-      padding: 20px 0 20px 60px; }
+      padding: 20px 20px 20px 50px; }
     .header .header-block .help, .header .header-block .setting, .header .header-block .account {
       margin-left: 20px;
       height: 100%;
@@ -102,6 +102,8 @@ img {
           .outer .g-nav .g-nav-list li a p {
             width: 70%;
             color: #333; }
+        .outer .g-nav .g-nav-list li.active {
+          background-color: #ccc; }
     .outer .g-nav.panelinactive {
       left: -230px; }
   .outer .home-content {
@@ -142,49 +144,56 @@ img {
         .outer .home-content .wrapper .ranking .section-wrapper {
           display: flex;
           justify-content: space-between; }
-          .outer .home-content .wrapper .ranking .section-wrapper .big-movie {
+          .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container {
             width: 80%;
-            display: flex;
-            justify-content: space-between;
-            color: #333; }
-            .outer .home-content .wrapper .ranking .section-wrapper .big-movie img {
-              width: 50%;
-              object-fit: contain; }
-            .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text {
-              width: 48%;
-              text-align: center;
-              margin-top: 30px; }
-              .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .movie-title {
-                font-size: 1.25rem;
-                font-weight: bold; }
-              .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .movie-subtitle, .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .movie-title-en {
-                font-size: 0.85rem; }
-              .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .speaker-profile {
-                margin: 10px 0 40px 0; }
-              .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .review-list {
-                background-color: #eee;
-                padding: 10px;
-                border-radius: 20px; }
-                .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .review-list .review-title {
-                  text-align: left;
-                  font-size: 0.85rem;
-                  font-weight: bold;
-                  margin-bottom: 10px; }
-                .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .review-list .review {
-                  display: flex;
-                  justify-content: space-between;
-                  align-items: center;
-                  background-color: #fff;
-                  border-radius: 20px;
-                  padding: 10px; }
-                  .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .review-list .review img {
-                    height: 2rem;
-                    width: 20%; }
-                  .outer .home-content .wrapper .ranking .section-wrapper .big-movie .text .review-list .review p {
-                    font-size: 0.85rem;
+            position: relative; }
+            .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie {
+              position: absolute;
+              display: none;
+              justify-content: space-between;
+              color: #333; }
+              .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie.active {
+                display: flex; }
+              .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie a {
+                width: 50%; }
+                .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie a img {
+                  object-fit: contain; }
+              .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie .text {
+                width: 48%;
+                text-align: center;
+                margin-top: 30px; }
+                .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie .text .movie-title {
+                  font-size: 1.25rem;
+                  font-weight: bold; }
+                .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie .text .movie-subtitle, .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie .text .movie-title-en {
+                  font-size: 0.85rem; }
+                .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie .text .speaker-profile {
+                  margin: 10px 0 40px 0; }
+                .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie .text .review-list {
+                  background-color: #eee;
+                  padding: 10px;
+                  border-radius: 20px; }
+                  .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie .text .review-list .review-title {
                     text-align: left;
-                    border-left: solid 1px #ccc;
-                    padding: 0 10px; }
+                    font-size: 0.85rem;
+                    font-weight: bold;
+                    margin-bottom: 10px; }
+                  .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie .text .review-list .review {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background-color: #fff;
+                    border-radius: 20px;
+                    padding: 10px; }
+                    .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie .text .review-list .review img {
+                      height: 2rem;
+                      width: 20%;
+                      object-fit: contain; }
+                    .outer .home-content .wrapper .ranking .section-wrapper .big-movie-container .big-movie .text .review-list .review p {
+                      font-size: 0.85rem;
+                      text-align: left;
+                      border-left: solid 1px #ccc;
+                      padding: 0 10px; }
           .outer .home-content .wrapper .ranking .section-wrapper .ranking-list {
             width: 15%; }
             .outer .home-content .wrapper .ranking .section-wrapper .ranking-list li {
@@ -198,8 +207,6 @@ img {
                   font-size: 1.25rem; }
                 .outer .home-content .wrapper .ranking .section-wrapper .ranking-list li a img {
                   width: 85%; }
-                  .outer .home-content .wrapper .ranking .section-wrapper .ranking-list li a img.active {
-                    border: solid 3px #ab27f3; }
                 .outer .home-content .wrapper .ranking .section-wrapper .ranking-list li a.read-more {
                   display: block;
                   margin: 0 auto;
@@ -207,6 +214,8 @@ img {
                   width: 85%;
                   border-radius: 10px;
                   background-color: #eee; }
+              .outer .home-content .wrapper .ranking .section-wrapper .ranking-list li.active img {
+                border: solid 3px #ab27f3; }
     .outer .home-content.fullwindow {
       padding-left: 0px; }
 
